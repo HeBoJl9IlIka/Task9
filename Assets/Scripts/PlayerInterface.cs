@@ -8,10 +8,9 @@ public class PlayerInterface : MonoBehaviour
 {
     [SerializeField] private Slider _slider;
     [SerializeField] private float _duration;
-    [SerializeField] private PlayerHealth _playerHealth;
 
-    public void ShowInfo()
+    public void ShowHealthBar(float value)
     {
-        _slider.DOValue(_playerHealth.Health, _duration);
+        _slider.DOValue(_slider.value + value, _duration);
     }
 }
