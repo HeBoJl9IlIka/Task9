@@ -7,6 +7,7 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 [RequireComponent(typeof(RectTransform))]
+[RequireComponent(typeof(Image))]
 public class ButtonAnimation : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private float _duration = 0.5f;
